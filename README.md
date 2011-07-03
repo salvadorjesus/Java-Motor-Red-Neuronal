@@ -7,7 +7,7 @@ This software is part of a small school project. The API and docummentation are 
 This neuronal network engine features: delta rule, backpropagation, initial random weights and momentum; ; support any number of hidden layers, and any number of elements per layer; all parameters are configurables; saves and loads weights.
 
 Spanish
-_______
+-------
 Motor simple de redes neuronales, tal como se describe en el libro Machine Learning, de Tom Mitchell.
 Este software forma parte de un pequeño proyecto académico. La API y la documentación están en español.
 
