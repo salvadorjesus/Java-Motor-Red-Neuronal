@@ -106,12 +106,12 @@ public class RedNeuronal
 		//2.Calcular el resultado de la red
 		float [] res = calcular(in);
 		
-		//3. Llamar la retroprogramacion en todas las salidas//Calcular delta de neurona de salida: res*(1-res)*(t-res)
+		//3. Llamar la retroprogramacion en todas las salidas
 		List <INeurona> lSalida = capas.get(capas.size()-1);
 
 			
 		for (int i = 0; i< t.length; i++)
-			lSalida.get(i).retropropagar(res[i]*(1-res[i])*(t[i]-res[i]), null);
+			lSalida.get(i).retropropagar((t[i]-res[i]), null);
 	}
 	
 	public String toString()
