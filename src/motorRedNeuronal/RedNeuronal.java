@@ -4,13 +4,19 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/**La clase Red Neuronal crea e interconecta todos los elementos de la red, la hace calcular y entrenarse, y guarda y carga su estado.*/
+/**La clase Red Neuronal crea e interconecta todos los elementos de la red, la hace calcular y entrenarse, y guarda y carga su estado.
+ * Implemente y use esta clase como interfaz de programación del motor.*/
 public class RedNeuronal
 {
 	/**Una lista de listas de {@link INeurona}s. Cada lista representa una capa.
 	 * La primera lista es de {@link ElementoEntrada} y la última de {@link ElementoSalida}.*/
 	private List <List<INeurona>> capas = new ArrayList<List<INeurona>>();
 	
+	
+	/**Constructor de la clase. Crea e interconecta los objetos que compondrán la red, según la configuración pasada.
+	 * @param desCapas Representa la configuración de la red. Este parámetro es un vector de enteros que describe la configuración de la red: El primer elemento es el número de entradas, el último es el número de salidas, y los que pueda haber en medio representan una capa oculta. Así, una configuración de {8,16,8}, representa una red con ocho entradas, ocho salidas (ocho neuronas de salida), y una capa oculta con dieciséis neuronas. Las entradas no representan una capa de neuronas. Tan solo representan la dimensión de entradas del problema. Así, si quisiese configurar un perceptrón con tres entradas, la configuración debería de ser: {3,1}.
+	 * El resto de los parámetros se le pasan directamente a todos los objetos {@link Perceptron} creados.
+	 * */
 	public RedNeuronal(int [] desCapas, float fCorreccion, float momento, float pesoMin, float pesoMax, IFuncionCalculo funcion)
 	{
 		//1. Comprobar que al menos haya dos elementos en el vector de descripción de capas
