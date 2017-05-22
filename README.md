@@ -4,7 +4,7 @@ A simple implementation of a neuronal network, as described in the book Machine 
 This software is part of a small school project. The API and documentation are in Spanish.
 
 ### Features
-This neuronal network engine features: delta rule, backpropagation, initial random weights and momentum; ; support any number of hidden layers, and any number of elements per layer; all parameters are configurables; saves and loads weights.
+This neuronal network engine features: delta rule, backpropagation, initial random weights and momentum; ; support any number of hidden layers, and any number of elements per layer; all parameters are configurable; saves and loads weights.
 
 Spanish
 -------
