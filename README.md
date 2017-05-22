@@ -1,4 +1,4 @@
-ava Motor Red Neuronal
+Java Motor Red Neuronal
 =======================
 A simple implementation of a neuronal network, as described in the book Machine Learning, by Tom Mitchell.
 This software is part of a small school project. The API and documentation are in Spanish.
